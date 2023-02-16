@@ -91,19 +91,22 @@
                                  id="sidebar" class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--2dp">
                                 <div class="mdl-card__title"
                                      style="border-bottom: 1px solid #eee;    -ms-flex-align: center;    align-items: center;    color: #000;   display: flex;   justify-content: stretch;    line-height: normal;    padding: 16px 26px;   perspective-origin: 165px 56px;   transform-origin: 165px 56px;    box-sizing: border-box;">
-                                    <h2 class="mdl-card__title-text">Manba</h2>
+                                    <h2 class="mdl-card__title-text">Assalomu alaykum!</h2>
                                 </div>
+
                                 <div class="mdl-card__supporting-text"
                                      style="    color: rgba(0,0,0,.54);  font-size: 1rem;  line-height: 18px; overflow: hidden; padding: 16px 26px; width: 100%;  box-sizing: border-box;">
                                     <p style="font-size: 16px;  font-weight: 400;  line-height: 26px;  letter-spacing: 0;   margin-bottom: 16px">
-                                        Lugʻatimiz bazasida <strong><span
-                                            class="mdl-color-text--pink">{{ countWords }}</span></strong>
-                                        soʻz jamlangan. Soʻzlar asosining izohi olingan asosiy manba: <i>E.
-                                        Begmatov, A.
-                                        Madvaliyev, N. Mahkamov, T. Mirzayev, N. Toʻxliyev, E. Umarov, D.
-                                        Xudoyberganova, A.
-                                        Xojiyev. 2006-2008. Oʻzbek tilining izohli lugʻati. “Oʻzbekiston milliy
-                                        ensiklopediyasi” Davlat ilmiy nashriyoti.</i></p>
+                                        Ushbu loyihamizning maqsadi o’zbek va ingliz tillaridagi inson xarakterini ifoda
+                                        etuvchi frazeologizmlarning izohli lig’atini yaratishdan iborat bo’lib, hozirda
+                                        saytda <strong><span
+                                            class="mdl-color-text--pink">{{ countWords }}</span></strong> ta o’zbek tilidagi, <strong><span
+                                            class="mdl-color-text--pink">{{ countWords2 }}</span></strong> ta ingliz tilidagi frazeologik iboralar
+                                        jamlangan. Saytning qidiruv tizimi vositasida kalit so’zlarni kiritish orqali
+                                        mos iboraning mazmuni to’g’risida ma’lumot olish mumkin. Shuningder, loyiha
+                                        bazasidagi (bosh sahifda joylashtirilgan) turg’un iboralar bilan ketma-ket
+                                        ko’rib chiqish yo’li bilan ham tanishib chiqish imkoniyati mavjud.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +117,7 @@
 
 
                             <div class="home-demo ">
-                                <h4>DEMO</h4>
+                                <h4>O'zbek tilidagi inson xarakteri xususiyatlarini ifoda etuvchi frazeologizmlar</h4>
                                 <div style="height: 290px;" class="owl-carousel owl-theme ">
 
 
@@ -123,7 +126,7 @@
 
                                     <div class="item"
                                          style="    max-width: 250px; padding: 15px;     height: 250px; box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 50%), 0 1px 5px 0 rgb(126 189 216 / 92%);">
-                                        <p class="" style="    color: ;">{{ word.name }}</p>
+                                        <p class="" style="    color: ;"><b>{{ word.name }}</b></p>
                                         <p class="" style="    color: ;">{{ word.description }}</p>
                                     </div>
 
@@ -135,7 +138,7 @@
                             </div>
 
                             <div class="home-demo " style="margin-top:50px;">
-                                <h4>DEMO</h4>
+                                <h4>Ingliz tilidagi inson xarakteri xususiyatlarini ifoda etuvchi frazeologizmlar</h4>
                                 <div style="height: 290px;" class="owl-carousel owl-theme ">
 
 
@@ -147,7 +150,7 @@
 
                                          style="    max-width: 250px; padding: 15px;     height: 250px; box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 50%), 0 1px 5px 0 rgb(186 156 235 / 92%);">
 
-                                        <p class="" style="    color: ;">{{ word.name }}</p>
+                                        <p class="" style="    color: ;"><b>{{ word.name }}</b></p>
                                         <p class="" style="    color: ;">{{ word.description }}</p>
 
                                     </div>
@@ -285,6 +288,7 @@ font-size:28px;
 
 
 
+
 </style>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -321,6 +325,7 @@ font-size:28px;
 
 
 
+
 </script>
 <script type="text/javascript">
 $(function() {
@@ -328,7 +333,7 @@ $(function() {
   owl.owlCarousel({
     items: 3,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 3800,
     loop: true,
     nav: true,
     responsive:{
@@ -344,6 +349,7 @@ $(function() {
 }
   });
 });
+
 
 
 

@@ -43,6 +43,7 @@ class HomePageView3(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['countWords'] = Word.objects.all().count()
+        context['countWords2'] = Word.objects.filter(eng=True,).count()
         context['Words'] = Word.objects.all()
 
         context['title'] = 'Bosh sahifa'
@@ -163,19 +164,3 @@ class SearchResultsList(ListView):
         name = self.request.GET.get("q")
         return Word.objects.filter(
             Q(name__icontains=name))
-
-# server {
-#     listen 80;
-#     server_name gippologik-termin.uz;
-#
-#     location = /favicon.ico { access_log off; log_not_found off; }
-#     location /static/ {
-#         root /home/ubuntu/nurbek/djangodictionary
-# ;
-#     }
-#
-#     location / {
-#         include proxy_params;
-#         proxy_pass http://unix:/run/sayt.sock;
-#     }
-# }
